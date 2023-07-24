@@ -1,0 +1,47 @@
+{
+  "login": {
+    "loginRequestURL": "https://nomura-mfa-sit-web.southeastasia.cloudapp.azure.com/auth/pwd"
+  },
+  "sdk": {
+    "baseUrl": "https://nomura-mfa-sit-web.southeastasia.cloudapp.azure.com",
+    "registrationRequestPath": "/nevisfido/uaf/1.1/request/registration/",
+    "registrationResponsePath": "/nevisfido/uaf/1.1/registration/",
+    "authenticationRequestPath": "/auth/fidouaf/",
+    "authenticationResponsePath": "/nevisfido/uaf/1.1/authentication/",
+    "deregistrationRequestPath": "/nevisfido/uaf/1.1/request/deregistration/",
+    "dispatchTargetResourcePath": "/nevisfido/token/dispatch/targets/",
+    "networkTimeoutInSeconds": "60",
+    "authenticationMaxRetries": 0,
+    "authenticationRetryIntervalInSeconds": "0",
+    "userInteractionTimeoutInSeconds": "30",
+    "facetId": "android:apk-key-hash:1SyN6Ur8JqDpVo45zBoABRNL97mvCCA8o/4b15coMrA"
+  },
+  "changeSdk": {
+    "baseUrl": "https://nomura-mfa-sit-web.southeastasia.cloudapp.azure.com",
+    "registrationRequestPath": "/biometric-register/",
+    "registrationResponsePath": "/nevisfido/uaf/1.1/registration/",
+    "authenticationRequestPath": "/auth/fidouaf/",
+    "authenticationResponsePath": "/nevisfido/uaf/1.1/authentication/",
+    "deregistrationRequestPath": "/nevisfido/uaf/1.1/request/deregistration/",
+    "dispatchTargetResourcePath": "/nevisfido/token/dispatch/targets/",
+    "networkTimeoutInSeconds": "60",
+    "authenticationMaxRetries": 0,
+    "authenticationRetryIntervalInSeconds": "0",
+    "userInteractionTimeoutInSeconds": "30",
+    "facetId": "android:apk-key-hash:1SyN6Ur8JqDpVo45zBoABRNL97mvCCA8o/4b15coMrA"
+  },
+  "sdkconfig2": {
+    "baseUrl": "https://nomura-mfa-sit-web.southeastasia.cloudapp.azure.com",
+    "registrationRequestPath": "/pin-reset/",
+    "registrationResponsePath": "/nevisfido/uaf/1.1/registration/",
+    "authenticationRequestPath": "/auth/fidouaf/",
+    "authenticationResponsePath": "/nevisfido/uaf/1.1/authentication/",
+    "deregistrationRequestPath": "/deregister/",
+    "dispatchTargetResourcePath": "/dispatch/targets/",
+    "networkTimeoutInSeconds": "60",
+    "authenticationMaxRetries": 0,
+    "authenticationRetryIntervalInSeconds": "0",
+    "userInteractionTimeoutInSeconds": "30",
+    "facetId": "android:apk-key-hash:1SyN6Ur8JqDpVo45zBoABRNL97mvCCA8o/4b15coMrA"
+  }
+}

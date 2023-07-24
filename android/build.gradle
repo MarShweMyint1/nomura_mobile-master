@@ -1,0 +1,56 @@
+buildscript {
+    ext.kotlin_version = '1.8.0'
+    repositories {
+        google()
+        mavenCentral()
+          maven {
+            url "https://maven.pkg.github.com/nevissecurity/nevis-mobile-authentication-sdk-android-package"
+            credentials {
+                username = "ChitOo-Naung"
+                password = "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"                
+            }
+        }
+      maven{
+                url "https://app-sit.stack.spectrumsoft-tech.com/Nomura/"
+            }
+      
+    }
+
+   
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.3.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url "https://maven.pkg.github.com/nevissecurity/nevis-mobile-authentication-sdk-android-package"
+            credentials {
+                username = "ChitOo-Naung"
+                password = "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"
+            }
+        }
+        maven{
+                url "https://app-sit.stack.spectrumsoft-tech.com/Nomura/"
+
+            }
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
